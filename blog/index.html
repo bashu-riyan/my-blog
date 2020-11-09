@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>me Blog</title>
+
+
+</head>
+<style>
+    * {
+        margin: 0px;
+    }
+    
+    .navbar {
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 70vw;
+        margin-top: 10px;
+    }
+    
+    .logo {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 19px;
+    }
+    
+    .unlist {
+        display: flex;
+    }
+    
+    .logo {
+        width: 29vh;
+    }
+    
+    nav ul li {
+        list-style: none;
+        margin: 0px 30px;
+    }
+    
+    nav ul li a:hover {
+        color: brown;
+        font-weight: 700;
+    }
+    
+    .btn {
+        background-color: white;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    
+    .btn:hover {
+        background-color: brown;
+        color: white;
+        transition: ease-in-out 0.4s;
+        border: 1px solid white;
+    }
+    
+    #search {
+        padding: 6px;
+        border-radius: 6px;
+    }
+    
+    .head-img {
+        display: flex;
+        justify-content: space-between;
+        width: 78vw;
+        margin: auto;
+        border-radius: 12px;
+        margin-top: 15px;
+        background-image: url('blog.jpg');
+    }
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 12px;
+    }
+    
+    .head h1 {
+        font-size: 38px;
+    }
+    
+    .head-img img {
+        border-radius: 152px;
+        width: 275px;
+        height: 265px;
+        border: 2px solid black;
+        margin: 9px;
+    }
+    
+    .content {
+        background-color: hsl(171deg 65% 84% / 31%);
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 14px;
+        border-radius: 20px;
+    }
+    
+    .content-post {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .content-post img {
+        width: 322px;
+        margin: 12px;
+        border-radius: 43px;
+    }
+    
+    .content-post p {
+        margin: 6px;
+    }
+    
+    .btn a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    .btn a:hover {
+        color: white;
+    }
+    
+    @media(max-width:1238px) {
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
+        .navbar ul {
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+        .head-img {
+            width: 100vw;
+        }
+        .content-post {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+    @media(max-width:531px) {
+        .navbar ul {
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar ul li {
+            margin: 15px;
+            text-align: center;
+        }
+        .head-img img {
+            display: none;
+        }
+        .head-img h1 {
+            margin-bottom: 10px;
+        }
+        .content {
+            width: 100%;
+            margin: 0px;
+            margin-top: 10px;
+        }
+    }
+    /* contact page reponsive */
+    
+    @media(max-width:872px) {
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .sub {
+            margin-left: 74px;
+        }
+    }
+    
+    @media(max-width:480px) {
+        .cbox {
+            width: 100vw;
+        }
+        .cright {
+            display: flex;
+            margin: 0px;
+        }
+    }
+    /* link pagee */
+    
+    @media(max-width:928px) {
+        .mylinks {
+            display: flex;
+            flex-direction: column;
+            ;
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <img src="/blog.png" width="150px" alt="">
+        <ul class="unlist">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/social.html">Social Links</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" name="query" id="search" placeholder="search">
+            <button class="btn"><a href="/search.html">search</a></button>
+
+        </div>
+    </nav>
+    <div>
+        <hr>
+    </div>
+    <section class="head-img">
+        <div class="head">
+            <h1>World For Bloggers</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore harum quo dicta eos est laboriosam velit consequatur maiores sed, dolorum nobis et nisi illum quos, modi amet explicabo accusamus mollitia. Minima, consectetur odit sit quasi
+                quo magnam quisquam dolores, porro vero fuga corporis aperiam voluptatem?.</p>
+        </div>
+        <div class="img">
+            <img src=" blog.jpg" alt=" ">
+        </div>
+
+    </section>
+    <section class="content ">
+        <h2>Featured Articles</h2>
+
+        <div class="content-post ">
+            <img src="v1.jpg" alt=" ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum magni veniam eum, at eos! Possimus dolore labore, maxime error quam earum consectetur hic impedit similique nihil quidem fugiat quaerat accusantium facere ad voluptas molestiae
+                itaque recusandae quas veniam unde officia explicabo. Accusamus, numquam ab.</p>
+
+        </div>
+
+
+        <div class="content-post ">
+            <img src="v2.jpg " alt=" ">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum magni veniam eum, at eos! Possimus dolore labore, maxime error quam earum consectetur hic impedit similique nihil quidem fugiat quaerat accusantium facere ad voluptas molestiae
+                itaque recusandae quas veniam unde officia explicabo. Accusamus, numquam ab.</p>
+        </div>
+        <div class="content-post ">
+            <img src="v3.jpg " alt=" ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum magni veniam eum, at eos! Possimus dolore labore, maxime error quam earum consectetur hic impedit similique nihil quidem fugiat quaerat accusantium facere ad voluptas molestiae
+                itaque recusandae quas veniam unde officia explicabo. Accusamus, numquam ab.</p>
+        </div>
+        <div class="content-post ">
+            <img src="v4.jpg " alt=" ">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio illum magni veniam eum, at eos! Possimus dolore labore, maxime error quam earum consectetur hic impedit similique nihil quidem fugiat quaerat accusantium facere ad voluptas molestiae
+                itaque recusandae quas veniam unde officia explicabo. Accusamus, numquam ab.</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
